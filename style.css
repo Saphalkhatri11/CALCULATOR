@@ -1,73 +1,85 @@
-
-
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fc70fc;
+}
 #main-rectangle{
     /* height: 650px;
     width: 350px; */
-    height: 780px ;
-    width: 350px ;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid black;
+    height: 600px ;
+    width: 300px ;
+    background-color: #2A2E37;
+    border: 2px solid white;
     margin: 10px auto ;
     position: relative;
     border-radius: 19px;
 }
 
 #show{
+    color: white;
     width: auto;
     /* border: 2px solid black; */
     position: absolute;
-    top: 30px;
+    top: 70px;
     right: 6px;
     font-size: 52px;
+    font-family: sans-serif;
+    font-style: medium;
+    user-select: none;
 }
 #second-rectangle{
     height: 60%;
-    width: 98%;
+    width: 100%;
     border-width: 1px;
     border-style: solid;
-    border-color: transparent;
+    border-color: black;
     position: absolute;
-    left: 0px;
-    right: 0px;
     bottom: 0px;
+    margin-left: auto;
+    margin-right: 2px;
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
-    column-gap: 10px;
-    row-gap: 1px;
-    background-color: #48F0FF;
-    border-bottom-left-radius: 19px;
-    border-bottom-right-radius: 19px;
-    padding-left: 4px;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    box-sizing: border-box;
 }
 
 .rectangle{
+    color: white;
     height: 70px;
-    width: 70px;
-    border: 2px solid black;
-    border-radius: 50%;
-    margin-top: 5px;
+    border: 1px solid black;
     font-size: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #2F3646;
     user-select: none;
     font-family: sans-serif;
     
 
 }
+#left-radius{
+      border-bottom-left-radius: inherit;
 
-.blue{
-    background-color: #5C5CFF;
+}
+
+#equal{
+    border-bottom-right-radius: inherit;
+}
+
+.purple{
+    background-color: #C25BDE;
     color: white;
 }
 
 .rectangle:active{
-    background-color: rgb(214, 214, 214);
+    background-color: #292f3d;
 }
 
-.blue:active{
-    background-color: #4545ff;
+.purple:active{
+    background-color: #bc48dc;
     
 
 }
