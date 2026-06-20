@@ -8,6 +8,9 @@ const modulo = document.getElementById("divide")
 const multiple = document.getElementById("multiple")
 const subtract = document.getElementById("subtract")
 const add = document.getElementById("add")
+const history = document.getElementById("history")
+const historyPanel = document.getElementById("history-rectangle")
+const arrow = document.querySelector(".Arrow")
 
 //creating a backspace.
 backspace.addEventListener("click", function(event){
@@ -18,8 +21,13 @@ backspace.addEventListener("click", function(event){
 //creating a equal button.
 equal.addEventListener("click" , function(event){
         let value = eval(show.textContent)
-        show.textContent = value.toString().slice(0, 13)
-        console.log(typeof value)
+        if(show.textContent === ""){
+                show.textContent = "Error"
+                
+        }
+        else{
+                show.textContent = value.toString().slice(0, 13)}
+
         event.stopPropagation()
 })
  //avoiding multiple modulo
@@ -126,6 +134,18 @@ secondRectangle.addEventListener("click" , function(event){
          
 
        
+})
+
+//opening history pannel:
+history.addEventListener("click" , function(event){
+        historyPanel.style.display = "block"
+
+})
+
+//creating a back button:
+arrow.addEventListener("click" , function(event){
+        historyPanel.style.display = "none"
+        
 })
 
 
