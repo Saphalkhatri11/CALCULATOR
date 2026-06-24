@@ -1,6 +1,1 @@
-# CALCULATOR
-CALCULATOR BY USING HTML, CSS AND JS
 
-features:
-Calculation
-History
